@@ -19,6 +19,7 @@
     </properties>
 
     <dependencies>
+        <!-- hot swapping, enable live reload -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mustache</artifactId>

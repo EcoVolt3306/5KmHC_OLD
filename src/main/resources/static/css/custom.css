@@ -28,6 +28,23 @@
     display:inline-block;
     vertical-align:top;
 }
+.field_custom .field_rad_mid div {
+    vertical-align:middle;
+}
+.field_custom .field_rad_mid span {
+    vertical-align:text-top;
+    padding-right:5px;
+}
+
+.def_mar {
+    margin-bottom:30px;
+}
+.def_lit_mar {
+    margin-bottom:10px;
+}
+
+
+
 /* -- //content -- */
 
 /* -- footer -- */
