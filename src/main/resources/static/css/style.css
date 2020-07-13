@@ -170,11 +170,6 @@ label {
   opacity: 1;
 }
 
-/* line 111, ../../Arafath/CL/December/234. Finance/HTML/scss/theme-default.scss */
-h3 {
-  font-size: 24px;
-}
-
 /* line 115, ../../Arafath/CL/December/234. Finance/HTML/scss/theme-default.scss */
 .mb-65 {
   margin-bottom: 67px;
@@ -1365,7 +1360,7 @@ h3 {
 
 /* line 4, ../../Arafath/CL/December/234. Finance/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/banner_2.png);
+  background-image: url(../img/banner/banner.png);
 }
 
 /* line 7, ../../Arafath/CL/December/234. Finance/HTML/scss/_slider.scss */
@@ -4055,12 +4050,12 @@ h2 {
 
 /* line 101, ../../Arafath/CL/December/234. Finance/HTML/scss/_elements.scss */
 h3 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 /* line 105, ../../Arafath/CL/December/234. Finance/HTML/scss/_elements.scss */
 h4 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 /* line 109, ../../Arafath/CL/December/234. Finance/HTML/scss/_elements.scss */
