@@ -20,4 +20,9 @@
         where ID = #{id, jdbcType=VARCHAR}
         and password = #{password, jdbcType=VARCHAR}
     </select>
+
+    <select id="checkId" resultType="com.fivekm_home_charge.charge.web.dto.MemberDto">
+        select * from MEMBER
+        where id = #{joinId}
+    </select>
 </mapper>

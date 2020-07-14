@@ -9,4 +9,5 @@ public interface MemberMapper {
     public ArrayList<MemberDto> getMembers() throws Exception;
     public void insertMembers(MemberDto memberDto) throws Exception;
     public MemberDto getMember(@Param("id")String id, @Param("password")String password) throws Exception;
+    public void checkId(String id);
 }

@@ -27,4 +27,9 @@ public class MemberService {
     public MemberDto getMember(String id, String password) throws Exception{
         return memberMapper.getMember(id,password);
     }
+
+    public void checkId(String id) {
+        System.out.println("SER");
+        memberMapper.checkId(id);
+    }
 }

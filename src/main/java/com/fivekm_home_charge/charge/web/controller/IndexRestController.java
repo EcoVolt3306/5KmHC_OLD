@@ -17,4 +17,10 @@ public class IndexRestController {
     public void insertMembers(MemberDto memberDto, HttpSession httpSession) throws Exception {
         memberService.insertMembers(memberDto);
     }
+
+    @PostMapping("/rest/checkId")
+    public void checkId(String id){
+        System.out.println("CON");
+        memberService.checkId(id);
+    }
 }
