@@ -1,6 +1,7 @@
 package com.fivekm_home_charge.charge.service;
 
 import com.fivekm_home_charge.charge.mapper.MemberMapper;
+import com.fivekm_home_charge.charge.web.dto.LoginDTO;
 import com.fivekm_home_charge.charge.web.dto.MemberDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,5 +32,10 @@ public class MemberService {
     public void checkId(String id) {
         System.out.println("SER");
         memberMapper.checkId(id);
+    }
+
+    public MemberDto login(LoginDTO loginDTO) throws Exception{
+        System.out.println("서비스 : 로그인" + loginDTO);
+        return memberMapper.login(loginDTO);
     }
 }

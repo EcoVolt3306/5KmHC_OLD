@@ -23,4 +23,5 @@ public class IndexRestController {
         System.out.println("CON");
         memberService.checkId(id);
     }
+
 }

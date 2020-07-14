@@ -23,6 +23,13 @@
 
     <select id="checkId" resultType="com.fivekm_home_charge.charge.web.dto.MemberDto">
         select * from MEMBER
-        where id = #{joinId}
+        where id = #{id}
+    </select>
+
+    <select id="login" resultType="com.fivekm_home_charge.charge.web.dto.MemberDto">
+        select id, password
+        from view_member
+        where id = #{id}
+        and password = #{password}
     </select>
 </mapper>

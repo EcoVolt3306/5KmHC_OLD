@@ -2,6 +2,7 @@ package com.fivekm_home_charge.charge.web.controller;
 
 import com.fivekm_home_charge.charge.service.HappyParkingService;
 import com.fivekm_home_charge.charge.service.MemberService;
+import com.fivekm_home_charge.charge.web.dto.LoginDTO;
 import com.fivekm_home_charge.charge.web.dto.MemberDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -41,7 +42,9 @@ public class IndexController {
         return "/index/" + itemid;
     }
     @GetMapping("/")
-    public String index() {
+    public String index(HttpSession httpSession) {
+        httpSession.getAttribute("user");
+        System.out.println("현제 세션 정보 : " + httpSession.getAttribute("user"));
         return "/index/index";
     }
 
@@ -108,4 +111,10 @@ public class IndexController {
     }
 
  */
+    @PostMapping("/rest/login")
+    public String login(LoginDTO loginDTO, HttpSession httpSession) throws Exception{
+        System.out.println("로그인 처리 - 컨트롤러"+ loginDTO);
+        httpSession.setAttribute("user", memberService.login(loginDTO));
+        return "redirect:/";
+    }
 }
