@@ -37,21 +37,21 @@ $('#joinBtn').click(function () {
     });
 });
 
-// // #로그인
-// $('#loginBtn').click(function () {
-//     var data = {
-//         id : $('#id').val(),
-//         password : $('#password').val()
-//     };
-//
-//     $.ajax({
-//         type: 'post',
-//         url: '/rest/login',
-//         data: data
-//     }).done(function(){
-//         alert("회원가입 완료");
-//         window.location.href="/index/login";
-//     }).fail(function (error) {
-//         alert(error);
-//     });
-// });
+ // #로그인
+$('#loginBtn').click(function () {
+     var data = {
+         id : $('#id').val(),
+         password : $('#password').val()
+     };
+
+     $.ajax({
+         type: 'post',
+         url: '/rest/login',
+         data: data
+     }).done(function(){
+         alert("회원가입 완료");
+         window.location.href="/index/login";
+     }).fail(function (error) {
+         alert(error);
+     });
+ });
